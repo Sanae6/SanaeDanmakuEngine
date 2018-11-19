@@ -1,0 +1,19 @@
+plugins {
+    id 'java'
+    id 'net.ltgt.apt' version "0.10"
+}
+
+group 'sanae.bh'
+version '1.0-SNAPSHOT'
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+dependencies {
+    compileOnly 'org.projectlombok:lombok:1.18.4'
+    apt 'org.projectlombok:lombok:1.18.4'
+    compile 'org.processing:core:3.3.7'
+    compile 'args4j:args4j:2.33'
+}
